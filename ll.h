@@ -165,7 +165,7 @@ void printListrev( LLPtr currentPtr )
          currentPtr = currentPtr->prevPtr;
       } // end while
 
-      printf( "%d %s --> NULL\n",currentPtr->data , currentPtr->name);
+      printf( "%d %s -->NULL\n",currentPtr->data , currentPtr->name);
        
 
      
