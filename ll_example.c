@@ -58,8 +58,11 @@ int main( void )
    } // end while
   /* Clear all nodes at the end of nodes*/
    while (!isEmpty(startPtr)){
-      ( deletes( &startPtr, startPtr->data ) );
-      printf( "%d deleted.\n", item );
+      LLPtr tempPtr;
+      tempPtr = startPtr;
+      startPtr=startPtr->nextPtr; 
+      printf( "%d deleted.\n", tempPtr->data );
+      ( deletes( &tempPtr, tempPtr->data ) );
    }
    puts( "End of run." );
 } // end main
