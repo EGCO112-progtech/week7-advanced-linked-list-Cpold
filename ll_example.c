@@ -21,7 +21,7 @@ int main( void )
       switch ( choice ) { 
          case 1:
             printf( "%s", "Enter id and name: " );
-            scanf( "%d %s*", &item, &item2);
+            scanf( "%d %s*", &item, item2);
             insert( &startPtr, item , item2); // insert item in list
             printList(startPtr);
             printListrev( startPtr );
